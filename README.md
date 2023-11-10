@@ -1,6 +1,6 @@
-# JokeAPI-Python-Wrapper
+# JokusHook
 
-Dieses Repository enthält einen Python-Wrapper für die JokeAPI. Es verwendet die `jokeapi` Bibliothek, um Programmier- und Pun-Jokes zu erhalten und diese dann über Discord zu versenden.
+Dieses Repository enthält einen Python-Wrapper für die JokeAPI um Programmier- und Pun-Jokes zu erhalten und diese dann über Discord mittels apprise zu versenden.
 
 ## Installation
 
