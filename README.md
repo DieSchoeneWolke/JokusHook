@@ -1,6 +1,7 @@
 # JokusHook
 
-Dieses Repository enthält einen Python-Wrapper für die JokeAPI um Programmier- und Pun-Jokes zu erhalten und diese dann über Discord mittels apprise zu versenden.
+Dieses Repository enthält ein Script um mittles Python mit der JokeAPI Witze zu generieren und diese dann mittels apprise zu versenden.
+Durch die Nutzung von apprise lassen sich die Benachrichtigungsdienste sehr leicht erweitern.
 
 ## Installation
 
@@ -22,3 +23,14 @@ Beispiel Discord:
 ```
 python /Notifications/Discord/jokus.py
 ```
+
+## Quellen
+
+https://github.com/caronc/apprise
+https://github.com/Sv443/JokeAPI
+https://github.com/leet-hakker/JokeAPI-Python
+
+
+## Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert.
