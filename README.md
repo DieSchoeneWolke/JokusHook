@@ -29,7 +29,9 @@ python /Notifications/Discord/jokus.py
 ## Quellen
 
 https://github.com/caronc/apprise
+
 https://github.com/Sv443/JokeAPI
+
 https://github.com/leet-hakker/JokeAPI-Python
 
 ## Lizenz
