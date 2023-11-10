@@ -1,9 +1,9 @@
 from jokeapi import Jokes
+from dotenv import load_dotenv
 import os
 import apprise
 import asyncio
 import aiohttp
-from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -13,13 +13,13 @@ async def run():
         async with session.get("https://v2.jokeapi.dev/") as response:
             status_code = response.status
             if 200 <= status_code < 300:
-                print(f"API is available. Status Code: {status_code}")
+                print(f" Jokus ist raus! ✔️ ")
             elif 400 <= status_code < 500:
-                print(f"Client error. Status Code: {status_code}")
+                print(f"Client Fehler. Code: {status_code} ❌")
             elif 500 <= status_code < 600:
-                print(f"Server error. Status Code: {status_code}")
+                print(f"Server Fehler. Code: {status_code} ❌")
             else:
-                print(f"Unexpected status code: {status_code}")
+                print(f"Hä?! Wassen hier los?: {status_code} ❓")
 
 
 asyncio.run(run())
@@ -28,7 +28,7 @@ asyncio.run(run())
 async def print_joke():
     j = await Jokes()
 
-    # Defining parameters for the jokes. https://github.com/leet-hakker/JokeAPI-Python#parameters
+    # Hier lassen sich die Parameter für die Jokusse anpassen. Mehr Infos: https://github.com/leet-hakker/JokeAPI-Python#parameters
     joke = await j.get_joke(
         lang="de", category=["programming", "pun"], blacklist=["nsfw", "racist"]
     )
@@ -43,7 +43,7 @@ async def main():
     joke_text = await print_joke()
     apobj = apprise.Apprise()
 
-    # Add the Discord notification service. Check here for other services: https://github.com/caronc/apprise#supported-notifications
+    # Hier laesst sich der oder die Benachrichtigungsservice anpassen. Mehr Infos: https://github.com/caronc/apprise#supported-notifications
     apobj.add(f"discord://{os.getenv('DISCORD_ID')}/{os.getenv('DISCORD_TOKEN')}")
 
     apobj.notify(
