@@ -22,6 +22,7 @@ async def run():
                 print(f"Hä?! Wassen hier los?: {status_code} ❓")
 
 
+
 asyncio.run(run())
 
 
@@ -29,6 +30,7 @@ async def print_joke():
     j = await Jokes()
 
     # Hier lassen sich die Parameter für die Jokusse anpassen. Mehr Infos: https://github.com/leet-hakker/JokeAPI-Python#parameters
+
     joke = await j.get_joke(
         lang="de", category=["programming", "pun"], blacklist=["nsfw", "racist"]
     )
@@ -43,10 +45,12 @@ async def main():
     joke_text = await print_joke()
     apobj = apprise.Apprise()
 
+
     # Hier lassen sich der oder die Benachrichtigungsservice anpassen. Mehr Infos: https://github.com/caronc/apprise#supported-notifications
     apobj.add(
         f"nctalks://{os.getenv('NEXTCLOUDTALK_USER')}:{os.getenv('NEXTCLOUDTALK_PASS')}@{os.getenv('NEXTCLOUDTALK_HOST')}/{os.getenv('NEXTCLOUD_ROOM1')}/"
     )
+
     apobj.notify(
         body=joke_text,
     )

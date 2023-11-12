@@ -9,22 +9,47 @@ Durch die Verwendung von apprise können die Benachrichtigungsdienste sehr einfa
 
 2. Erstelle eine `.env` Datei im Hauptverzeichnis des Repository und füge deine Zugangsdaten hinzu:
 
-Beispiel Discord Webhook:
+
+Discord Webhook:
+
 
 ```
 DISCORD_ID="1234"
 DISCORD_TOKEN="ab31c647dhfataw412e"
 ```
 
+
+und / oder
+
+Nextcloud Talk:
+
+```
+NEXTCLOUDTALK_USER = "NeuerUser"
+NEXTCLOUDTALK_PASS = "AppPassword"
+NEXTCLOUDTALK_HOST = "nc.dieschoenewolke.com"
+NEXTCLOUD_ROOM1 = "1abc2345"
+```
+
+
 ## Verwendung
 
 Führe das Python-Skript aus, um einen Jokus zu versenden.
 
-Beispiel Discord Webhook:
+
+Discord Webhook:
+
 
 ```
 python /Notifications/Discord/jokus.py
 ```
+
+
+Nextcloud Talk:
+
+```
+python /Notifications/NextcloudTalk/jokus.py
+```
+
 
 ## Quellen
 

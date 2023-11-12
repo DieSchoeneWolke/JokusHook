@@ -44,6 +44,7 @@ async def main():
     apobj = apprise.Apprise()
 
     # Hier lassen sich der oder die Benachrichtigungsservice anpassen. Mehr Infos: https://github.com/caronc/apprise#supported-notifications
+
     apobj.add(f"discord://{os.getenv('DISCORD_ID')}/{os.getenv('DISCORD_TOKEN')}")
 
     apobj.notify(
