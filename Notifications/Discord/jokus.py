@@ -43,7 +43,8 @@ async def main():
     joke_text = await print_joke()
     apobj = apprise.Apprise()
 
-    # Hier laesst sich der oder die Benachrichtigungsservice anpassen. Mehr Infos: https://github.com/caronc/apprise#supported-notifications
+    # Hier lassen sich der oder die Benachrichtigungsservice anpassen. Mehr Infos: https://github.com/caronc/apprise#supported-notifications
+
     apobj.add(f"discord://{os.getenv('DISCORD_ID')}/{os.getenv('DISCORD_TOKEN')}")
 
     apobj.notify(
