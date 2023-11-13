@@ -13,7 +13,7 @@ async def run():
         async with session.get("https://v2.jokeapi.dev/") as response:
             status_code = response.status
             if 200 <= status_code < 300:
-                print(f" Jokus ist raus! ✔️ ")
+                print(f"Jokus ist raus! ✔️")
             elif 400 <= status_code < 500:
                 print(f"Client Fehler. Code: {status_code} ❌")
             elif 500 <= status_code < 600:
@@ -29,6 +29,7 @@ async def print_joke():
     j = await Jokes()
 
     # Hier lassen sich die Parameter für die Jokusse anpassen. Mehr Infos: https://github.com/leet-hakker/JokeAPI-Python#parameters
+
     joke = await j.get_joke(
         lang="de", category=["programming", "pun"], blacklist=["nsfw", "racist"]
     )
@@ -45,7 +46,9 @@ async def main():
 
     # Hier lassen sich der oder die Benachrichtigungsservice anpassen. Mehr Infos: https://github.com/caronc/apprise#supported-notifications
 
-    apobj.add(f"discord://{os.getenv('DISCORD_ID')}/{os.getenv('DISCORD_TOKEN')}")
+    apobj.add(
+        f"discord://{os.getenv('DISCORD_ID')}/{os.getenv('DISCORD_TOKEN')}"
+    )
 
     apobj.notify(
         body=joke_text,

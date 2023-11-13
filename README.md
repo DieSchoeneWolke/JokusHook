@@ -14,8 +14,8 @@ Discord Webhook:
 
 
 ```
-DISCORD_ID="1234"
-DISCORD_TOKEN="ab31c647dhfataw412e"
+DISCORD_ID = "1234"
+DISCORD_TOKEN = "ab31c647dhfataw412e"
 ```
 
 
