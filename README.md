@@ -61,4 +61,10 @@ https://github.com/leet-hakker/JokeAPI-Python
 
 ## Lizenz
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert.
+Dieses Projekt ist unter der GNU General Public License, Version 3.0 (GPL-3.0) lizenziert.
+
+## Komponente von Drittanbietern
+
+Einige Teile dieses Projekts stammen von oder enthalten Komponenten, die unter der BSD 2-Clause License lizenziert sind.
+
+- `apprise`
