@@ -1,6 +1,4 @@
 # JokusHook
-<details>
-  <summary>🇺🇸 English Version</summary>
 
 This repository contains Python scripts to automatically fetch jokes ('Jokus') via the JokeAPI and send them via apprise.
 
@@ -72,8 +70,11 @@ Some components of this project contains 3rd party elements that are licensed un
 
 - `apprise`
 
-</details>
 
+<details>
+  <summary> 🇩🇪 Translation</summary>
+  
+# JokusHook
 
 Dieses Repository enthält Skripte, um mit Hilfe von Python und der JokeAPI Witze ("Jokus") zu generieren und diese über apprise zu versenden.
 
@@ -144,3 +145,5 @@ Dieses Projekt ist unter der GNU General Public License, Version 3.0 (GPL-3.0) l
 Einige Teile dieses Projekts stammen von oder enthalten Komponenten, die unter der BSD 2-Clause License lizenziert sind.
 
 - `apprise`
+
+</details>
