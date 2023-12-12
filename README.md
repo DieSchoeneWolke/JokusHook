@@ -88,7 +88,9 @@ Durch die Verwendung von apprise können die Benachrichtigungsdienste sehr einfa
 2. Erstelle eine `.env` Datei im Hauptverzeichnis des Repository und füge deine Zugangsdaten hinzu:
 
 
+
 #### Discord Webhook:
+
 
 ```
 DISCORD_ID = "1234"
@@ -96,7 +98,9 @@ DISCORD_TOKEN = "ab31c647dhfataw412e"
 ```
 
 
+
 #### Nextcloud Talk:
+
 
 ```
 NEXTCLOUDTALK_USER = "NeuerUser"
@@ -111,7 +115,9 @@ NEXTCLOUD_ROOM1 = "1abc2345"
 Führe das Python-Skript aus, um einen Jokus zu versenden.
 
 
+
 #### Discord Webhook:
+
 
 
 ```
@@ -120,6 +126,7 @@ python /Notifications/Discord/jokus.py
 
 
 #### Nextcloud Talk:
+
 
 ```
 python /Notifications/NextcloudTalk/jokus.py
@@ -140,6 +147,7 @@ https://github.com/leet-hakker/JokeAPI-Python
 Dieses Projekt ist unter der GNU General Public License, Version 3.0 (GPL-3.0) lizenziert.
 
 
+             
 ## Komponente von Drittanbietern
 
 Einige Teile dieses Projekts stammen von oder enthalten Komponenten, die unter der BSD 2-Clause License lizenziert sind.
