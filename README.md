@@ -35,7 +35,7 @@ NEXTCLOUD_ROOM1 = "1abc2345"
 Run the python script to send a Jokus.
 
 
-Discord Webhook:
+#### Discord Webhook:
 
 
 ```
@@ -43,7 +43,7 @@ python /Notifications/Discord/jokus.py
 ```
 
 
-Nextcloud Talk:
+#### Nextcloud Talk:
 
 ```
 python /Notifications/NextcloudTalk/jokus.py
@@ -111,7 +111,7 @@ NEXTCLOUD_ROOM1 = "1abc2345"
 Führe das Python-Skript aus, um einen Jokus zu versenden.
 
 
-Discord Webhook:
+#### Discord Webhook:
 
 
 ```
@@ -119,7 +119,7 @@ python /Notifications/Discord/jokus.py
 ```
 
 
-Nextcloud Talk:
+#### Nextcloud Talk:
 
 ```
 python /Notifications/NextcloudTalk/jokus.py
