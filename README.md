@@ -1,11 +1,13 @@
 # JokusHook
 
+
 This repository contains Python scripts to automatically fetch jokes ('Jokus') via the JokeAPI and send them via apprise.
 
 The notification services can be easily extended by using apprise.
 
 
 ## Installation
+
 
 1. Install the requirements with `pip install -r requirements.txt`.
 
@@ -14,6 +16,7 @@ The notification services can be easily extended by using apprise.
 
 #### Discord Webhook:
 
+
 ```
 DISCORD_ID = "1234"
 DISCORD_TOKEN = "ab31c647dhfataw412e"
@@ -21,6 +24,7 @@ DISCORD_TOKEN = "ab31c647dhfataw412e"
 
 
 #### Nextcloud Talk:
+
 
 ```
 NEXTCLOUDTALK_USER = "NeuerUser"
@@ -31,6 +35,7 @@ NEXTCLOUD_ROOM1 = "1abc2345"
 
 
 ## Usage
+
 
 Run the python script to send a Jokus.
 
@@ -45,12 +50,14 @@ python /Notifications/Discord/jokus.py
 
 #### Nextcloud Talk:
 
+
 ```
 python /Notifications/NextcloudTalk/jokus.py
 ```
 
 
 ## Sources
+
 
 https://github.com/caronc/apprise
 
@@ -61,10 +68,12 @@ https://github.com/leet-hakker/JokeAPI-Python
 
 ## License
 
+
 This project is licensed under the GNU General Public License, Version 3.0 (GPL-3.0).
 
 
 ## 3rd Party Components
+
 
 Some components of this project contains 3rd party elements that are licensed under the BSD 2-Clause License.
 
@@ -76,12 +85,14 @@ Some components of this project contains 3rd party elements that are licensed un
   
 # JokusHook
 
+
 Dieses Repository enthält Skripte, um mit Hilfe von Python und der JokeAPI Witze ("Jokus") zu generieren und diese über apprise zu versenden.
 
 Durch die Verwendung von apprise können die Benachrichtigungsdienste sehr einfach erweitert werden.
 
 
 ## Installation
+
 
 1. Installiere die Anforderungen mit `pip install -r requirements.txt`.
 
@@ -90,6 +101,7 @@ Durch die Verwendung von apprise können die Benachrichtigungsdienste sehr einfa
 
 #### Discord Webhook:
 
+
 ```
 DISCORD_ID = "1234"
 DISCORD_TOKEN = "ab31c647dhfataw412e"
@@ -97,6 +109,7 @@ DISCORD_TOKEN = "ab31c647dhfataw412e"
 
 
 #### Nextcloud Talk:
+
 
 ```
 NEXTCLOUDTALK_USER = "NeuerUser"
@@ -107,6 +120,7 @@ NEXTCLOUD_ROOM1 = "1abc2345"
 
 
 ## Verwendung
+
 
 Führe das Python-Skript aus, um einen Jokus zu versenden.
 
@@ -121,12 +135,14 @@ python /Notifications/Discord/jokus.py
 
 #### Nextcloud Talk:
 
+
 ```
 python /Notifications/NextcloudTalk/jokus.py
 ```
 
 
 ## Quellen
+
 
 https://github.com/caronc/apprise
 
@@ -137,10 +153,12 @@ https://github.com/leet-hakker/JokeAPI-Python
 
 ## Lizenz
 
+
 Dieses Projekt ist unter der GNU General Public License, Version 3.0 (GPL-3.0) lizenziert.
 
 
 ## Komponente von Drittanbietern
+
 
 Einige Teile dieses Projekts stammen von oder enthalten Komponenten, die unter der BSD 2-Clause License lizenziert sind.
 
